@@ -1,0 +1,66 @@
+/* Global */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navigation */
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.navigation-logo img {
+    width: 60%;
+    height: auto;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation-link {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 50px;
+    margin-right: 30px;
+}
+
+.navigation-link:hover {
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
+}
+
+/* Recherche */
+
+/* Filtres */
+
+/* Infos */
+
+/*Footer */
