@@ -31,6 +31,15 @@ ul {
     padding-left: 20px;
 }
 
+.fa-star {
+    font-size: 14px;
+    color: #0065fc;
+}
+
+.star-grey {
+    color: #B1B1B1;
+}
+
 /* Navigation */
 
 .navigation {
@@ -88,7 +97,7 @@ ul {
 .search-interface i {
     font-size: 20px;
     min-width: 60px;
-    min-height: 57px;
+    min-height: 60px;
     background-color: #f2f2f2;
     display: flex;
     justify-content: center;
@@ -102,6 +111,7 @@ ul {
     border-top: #f2f2f2 2px solid;
     border-bottom: #f2f2f2 2px solid;
     width: 269px;
+    padding-top: 8px;
 }
 
 .search-interface button {
@@ -120,6 +130,7 @@ ul {
     padding-bottom: 40px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .search-filtres h2 {
@@ -136,8 +147,6 @@ ul {
     display: flex;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
-    border: 3px solid #f2f2f2;
 }
 
 .search-filtres button i {
@@ -150,6 +159,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: -2px;
 }
 
 .search-filtres button span {
@@ -209,4 +219,108 @@ footer {
 .footer-item li {
     padding-top: 10px;
     font-size: 20px;
+}
+
+/* All-hotels */
+
+.all-hotels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Hosting */
+
+.hosting {
+    flex-basis: 65%;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+.hosting h2 {
+    font-size: 20px;
+    padding: 40px 0 30px 48px;
+}
+
+.hosting-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.hosting-cards a {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 0 5px #B1B1B1;
+    min-height: 100%;
+    flex-basis: 300px;
+    margin-bottom: 40px;
+}
+
+.hosting-cards a img {
+    height: 130px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+.hosting-cards-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 0 11px 11px;
+    min-height: 100px;
+}
+
+.afficher-plus {
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0 45px 57px;
+}
+
+/* Famous */
+
+.famous {
+    flex-basis: 32%;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+.famous-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 20px 20px;
+}
+
+.famous-title h2 {
+    font-size: 20px;
+}
+
+.famous-cards a {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 0 5px #B1B1B1;
+    min-height: 100%;
+    flex-basis: 300px;
+    margin-bottom: 40px;
+}
+
+.famous-cards a img {
+    height: 120px;
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
+}
+
+.famous-card-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0 11px 11px;
+    min-height: 100px;
 }
