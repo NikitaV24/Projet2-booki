@@ -13,6 +13,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
+    font-size: 100%;
 }
 
 a {
@@ -27,12 +28,12 @@ ul {
 ::placeholder {
     color: black;
     font-weight: bold;
-    font-size: 20px;
-    padding-left: 20px;
+    font-size: 12px;
+    padding-left: 15px;
 }
 
 .fa-star {
-    font-size: 14px;
+    font-size: 8px;
     color: #0065fc;
 }
 
@@ -48,12 +49,15 @@ ul {
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.navigation-logo {
+    padding-left: 10px;
 }
 
 .navigation-logo img {
-    padding-left: 16px;
-    width: 60%;
+    width: 40%;
     height: auto;
 }
 
@@ -67,7 +71,7 @@ ul {
     padding-left: 20px;
     padding-top: 44px;
     margin-right: 30px;
-    font-size: 20px;
+    font-size: 12px;
 }
 
 .navigation-link:hover {
@@ -78,69 +82,68 @@ ul {
 /* Recherche */
 
 .search-title h1 {
-    font-size: 25px;
+    font-size: 15px;
     padding-bottom: 10px;
 }
 
 .search-title p {
-    font-size: 18.5px;
-    padding-bottom: 20px;
+    font-size: 11px;
+    padding-bottom: 12px;
 }
 
 .search-interface {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding-bottom: 37px;
+    padding-bottom: 20px;
 }
 
 .search-interface i {
-    font-size: 20px;
-    min-width: 60px;
-    min-height: 60px;
+    font-size: 12px;
+    min-width: 36px;
+    min-height: 36px;
     background-color: #f2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px 0 0 20px;
+    border-radius: 11px 0 0 11px;
 }
 
 .search-interface input {
     border-left: 0;
     border-right: 0;
-    border-top: #f2f2f2 2px solid;
-    border-bottom: #f2f2f2 2px solid;
-    width: 269px;
-    padding-top: 8px;
+    border-top: #f2f2f2 1px solid;
+    border-bottom: #f2f2f2 1px solid;
+    width: 18%;
 }
 
 .search-interface button {
-    width: 150px;
+    width: 10%;
     background-color: #0065fc;
     border: none;
     color: white;
     font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 20px 20px 0;
+    font-size: 11px;
+    border-radius: 0 11px 11px 0;
 }
 
 /* Filtres */
 
 .search-filtres {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
 .search-filtres h2 {
-    padding-right: 40px;
-    padding-left: 10px;
-    font-size: 20px;
+    padding-right: 19px;
+    padding-left: 5px;
+    font-size: 14px;
 }
 
 .search-filtres button {
-    margin-right: 30px;
+    margin-right: 17px;
     background-color: white;
     border: #f2f2f2 2px solid;
     border-radius: 50px / 50px;
@@ -151,11 +154,11 @@ ul {
 
 .search-filtres button i {
     color: #0065fc;
-    min-width: 50px;
-    min-height: 50px;
+    min-width: 35px;
+    min-height: 35px;
     border-radius: 50%;
     background-color: #deebff;
-    font-size: 20px;
+    font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,10 +166,10 @@ ul {
 }
 
 .search-filtres button span {
-    padding-left: 15px;
-    padding-right: 27px;
+    padding-left: 11px;
+    padding-right: 19px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 11px;
 }
 
 /* Infos */
@@ -180,9 +183,10 @@ ul {
 }
 
 .infos i {
-    min-height: 30px;
-    min-width: 30px;
-    border: 2px solid #f2f2f2;
+    min-height: 21px;
+    min-width: 21px;
+    font-size: 11px;
+    border: 1px solid #f2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,6 +196,7 @@ ul {
 
 .infos p {
     padding-left: 10px;
+    font-size: 11px;
 }
 
 /*Footer */
@@ -232,14 +237,14 @@ footer {
 /* Hosting */
 
 .hosting {
-    flex-basis: 65%;
+    flex-basis: 66.5%;
     background-color: #f2f2f2;
     border-radius: 20px;
 }
 
 .hosting h2 {
-    font-size: 20px;
-    padding: 40px 0 30px 48px;
+    font-size: 15px;
+    padding: 30px 0 30px 30px;
 }
 
 .hosting-cards {
@@ -247,34 +252,27 @@ footer {
     flex-direction: column;
 }
 
-.hosting-upper {
+.hosting-line {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    justify-content: space-between;
+    width: 90%;
     margin: auto;
+    padding-bottom: 30px;
 }
 
-.hosting-bottom {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    margin: auto;
-}
-
-.hosting-cards a {
+.hosting-line a {
     display: flex;
     flex-direction: column;
+    width: 30%;
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
+    padding: 4px;
     box-shadow: 0 0 5px #B1B1B1;
-    min-height: 100%;
-    flex-basis: 300px;
-    margin-bottom: 40px;
 }
 
-.hosting-cards a img {
-    height: 130px;
+.hosting-line a img {
+    height: 89px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
@@ -284,20 +282,27 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     padding: 10px 0 11px 11px;
-    min-height: 100px;
+}
+
+.hosting-cards-contents h3 {
+    font-size: 11px;
+}
+
+.hosting-cards-contents p {
+    font-size: 11px;
 }
 
 .afficher-plus {
     border: none;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bold;
-    margin: 20px 0 45px 57px;
+    margin-left: 40px;
 }
 
 /* Famous */
 
 .famous {
-    flex-basis: 32%;
+    flex-basis: 30%;
     background-color: #f2f2f2;
     border-radius: 20px;
 }
@@ -306,12 +311,12 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 20px;
-    padding: 40px 30px 30px 48px;
+    font-size: 15px;
+    padding: 30px 30px 30px 30px;
 }
 
 .famous-title h2 {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .famous-cards {
@@ -332,7 +337,9 @@ footer {
 }
 
 .famous-cards a img {
-    height: 150px;
+    height: 100px;
+    width: 112px;
+    max-width: 44%;
     border-radius: 15px 0 0 15px;
     object-fit: cover;
 }
@@ -343,4 +350,68 @@ footer {
     justify-content: space-between;
     padding: 10px 0 11px 11px;
     min-height: 100px;
+}
+
+.famous-card-header h3 {
+    font-size: 11px;
+}
+
+.famous-card-header p {
+    font-size: 11px;
+}
+
+/* Iphone 8 écran */
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .navigation {
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation-logo {
+        display: flex;
+        justify-content: space-around;
+    }
+    .navigation-logo img {
+        width: 60%;
+    }
+    .navigation-link {
+        font-size: initial;
+        padding: 0;
+        margin: 0;
+    }
+    .navigation ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .search-interface button {
+        display: none;
+    }
+    .container {
+        margin: unset;
+    }
+    .famous {
+        border-radius: unset;
+    }
+    .all-hotels {
+        flex-direction: column;
+    }
+    .hosting {
+        order: 1;
+        border-radius: unset;
+        background-color: white;
+    }
+    .hosting-line {
+        flex-direction: column;
+    }
+    .hosting-line a {
+        width: 100%;
+    }
+    .afficher-plus {
+        font-size: 18px;
+        background-color: white;
+        margin: 0 0 0 0;
+    }
+    footer {
+        flex-direction: column;
+    }
 }
