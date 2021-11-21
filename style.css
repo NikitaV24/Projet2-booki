@@ -364,71 +364,184 @@ footer {
     font-size: 11px;
 }
 
+/* Activités */
+
+.activities {
+    padding-bottom: 50px;
+}
+
+.activities h2 {
+    font-size: 10px;
+    padding: 10px 10px 10px 10px;
+
+}
+
+.activities-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.vieux-port, .calanques {
+    width: 22%;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #B1B1B1;
+    height: 600px;
+}
+
+.vieux-port img, .calanques img {
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    width: -webkit-fill-available;
+    height: 92.5%;
+}
+
+.pomegues-frioul, .dame-longchamp {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pomegues-frioul a, .dame-longchamp a {
+
+    display: block;
+}
+
+.fort-pomegues, .frioul, .notre-dame, .longchamp {
+    border-radius: 20px;
+    box-shadow: 0 0 5px #B1B1B1;
+}
+
+
+.fort-pomegues img, .frioul img, .notre-dame img, .longchamp img {
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    width: -webkit-fill-available;
+
+}
+
+.fort-pomegues {
+    height: 330px;
+}
+
+.frioul {
+    height: 230px;
+}
+
+.fort-pomegues img {
+    height: 85%;
+}
+
+.frioul img {
+    height: 80%;
+}
+
+.notre-dame {
+    height: 280px;
+}
+
+.longchamp {
+    height: 280px;
+}
+
+.notre-dame img {
+    height: 83.5%;
+}
+
+.longchamp img {
+    height: 83.5%;
+}
+
+.activities-cards a h3 {
+    font-size: 11px;
+    padding: 10px 10px 10px 10px;
+}
+
+.activities-cards a img {}
+
 /* Iphone 8 écran */
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
     .container {
         margin: unset;
     }
+
     .navigation {
         flex-direction: column;
         align-items: unset;
         padding-bottom: 30px;
         padding-top: 20px;
     }
+
     .navigation-logo {
         display: flex;
         justify-content: center;
     }
+
     .navigation-logo img {
         width: 30%;
     }
+
     .navigation-link:hover {
         border-top: unset;
     }
+
     .navigation-link {
         margin: unset;
         display: flex;
         justify-content: center;
         padding: unset;
     }
+
     .navigation ul li:nth-child(1) {
         padding-bottom: 10px;
         width: 50%;
     }
+
     .navigation ul li:nth-child(2) {
         padding-bottom: 10px;
         width: 50%;
     }
+
     .navigation ul li:hover {
         color: #0065fc;
         border-bottom: 2px solid #0065fc;
     }
+
     .navigation ul li {
         border-top: unset;
         border-bottom: 2px solid #f2f2f2;
     }
+
     .navigation ul {
         display: flex;
         justify-content: space-around;
         padding-top: 20px;
     }
+
     .rechercher {
         display: none;
     }
+
     .search-interface input {
         width: unset;
     }
+
     .search {
         margin: 2%;
     }
+
     .search-filtres h2 {
         width: 100%;
         margin-bottom: 10px;
     }
+
     .search-filtres button {
         margin-bottom: 10px;
     }
+
     .loupe {
         display: unset;
         border: 1px solid #f2f2f2;
@@ -437,6 +550,7 @@ footer {
         background-color: white;
         border-radius: 0 11px 11px 0;
     }
+
     .loupe i {
         color: white;
         min-width: 35px;
@@ -448,34 +562,42 @@ footer {
         align-items: center;
         justify-content: center;
     }
+
     .famous {
         border-radius: unset;
     }
+
     .all-hotels {
         flex-direction: column;
     }
+
     .hosting {
         order: 1;
         border-radius: unset;
         background-color: white;
     }
+
     .hosting-cards {
         padding-bottom: 25px;
     }
+
     .hosting-line {
         flex-direction: column;
         padding-bottom: unset;
     }
+
     .hosting-line a {
         width: 100%;
         margin-bottom: 10px;
     }
+
     .afficher-plus {
         font-size: 18px;
         background-color: white;
         padding-left: 20px;
         margin: 0 0 0 0;
     }
+
     footer {
         display: flex;
         flex-direction: column;
@@ -488,34 +610,52 @@ footer {
     .container {
         margin: unset;
     }
+
     header {
-        margin: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
+
+    .navigation-logo img {
+        width: 100px;
+    }
+
     .navigation-link {
-        padding-top: 56px;
+        padding-top: 38px;
     }
+
     .hosting {
         border-radius: 0 20px 20px 0;
     }
-    .hosting-line content {
-        padding: 0;
-    }
+
+
+
     .hosting-line a img {
         height: 75px;
     }
+
     .hosting-line a {
         padding-bottom: 0;
     }
+
     .hosting-cards-contents {
         padding-left: 4px;
     }
+
     .famous {
         border-radius: 20px 0 0 20px;
     }
+
     .famous-cards a {
         margin-bottom: 20px;
     }
+
     .famous-cards a img {
         height: 105px;
+    }
+
+    .activities {
+        margin-left: 2%;
+        margin-right: 2%;
     }
 }
