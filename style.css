@@ -154,7 +154,13 @@ ul {
     display: flex;
     align-items: center;
     flex-direction: row;
+
 }
+
+.search-filtres button:hover {
+    background-color: #0065fc;
+}
+
 
 .search-filtres button i {
     color: #0065fc;
@@ -602,60 +608,96 @@ footer {
         display: flex;
         flex-direction: column;
     }
-}
 
-/* Tablette */
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .container {
-        margin: unset;
+    .activities-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    header {
-        margin-left: 2%;
-        margin-right: 2%;
+    .pomegues-frioul, .dame-longchamp {
+        display: flex;
+        align-items: center;
+        width: 90%;
     }
 
-    .navigation-logo img {
-        width: 100px;
+    .vieux-port, .calanques {
+        width: 90%;
+        height: 150px;
+        margin-bottom: 10px;
     }
 
-    .navigation-link {
-        padding-top: 38px;
+    .fort-pomegues, .frioul, .longchamp, .notre-dame {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 10px;
     }
 
-    .hosting {
-        border-radius: 0 20px 20px 0;
+    .vieux-port img, .calanques img, .fort-pomegues img, .notre-dame img, .longchamp img {
+        height: 80%;
+    }
+
+    .activities-cards a h3 {
+        padding: unset;
+        padding-left: 10px;
+        padding-top: 5px;
     }
 
 
 
-    .hosting-line a img {
-        height: 75px;
-    }
 
-    .hosting-line a {
-        padding-bottom: 0;
-    }
+    /* Tablette */
 
-    .hosting-cards-contents {
-        padding-left: 4px;
-    }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+        .container {
+            margin: unset;
+        }
 
-    .famous {
-        border-radius: 20px 0 0 20px;
-    }
+        header {
+            margin-left: 2%;
+            margin-right: 2%;
+        }
 
-    .famous-cards a {
-        margin-bottom: 20px;
-    }
+        .navigation-logo img {
+            width: 100px;
+        }
 
-    .famous-cards a img {
-        height: 105px;
-    }
+        .navigation-link {
+            padding-top: 38px;
+        }
 
-    .activities {
-        margin-left: 2%;
-        margin-right: 2%;
+        .hosting {
+            border-radius: 0 20px 20px 0;
+        }
+
+
+
+        .hosting-line a img {
+            height: 75px;
+        }
+
+        .hosting-line a {
+            padding-bottom: 0;
+        }
+
+        .hosting-cards-contents {
+            padding-left: 4px;
+        }
+
+        .famous {
+            border-radius: 20px 0 0 20px;
+        }
+
+        .famous-cards a {
+            margin-bottom: 20px;
+        }
+
+        .famous-cards a img {
+            height: 105px;
+        }
+
+        .activities {
+            margin-left: 2%;
+            margin-right: 2%;
+        }
     }
-}
